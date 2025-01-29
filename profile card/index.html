@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="image/1734465620744.jpeg" alt="Profile Picture" data-testid="profilePicture">
+        <h2 data-testid="fullName">Idowu Abdulquadri Olamide</h2>
+        <p data-testid="jobTitle">Frontend Developer</p>
+        <p data-testid="shortBio">Passionate about coding and technology.</p>
+        <p data-testid="currentLocation">Lagos, Nigeria</p>
+        <p data-testid="emailAddress">Idowuabdulquadri7@example.com</p>
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://www.linkedin.com/in/idowu-abdul-quadri-93162333b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+            <a href="https://www.github.com/olamidex557">GitHub</a>
+        </div>
+        <p data-testid="currentTimeUTC" id="utc-time"></p>
+    </div>
+    <script>
+        function updateTime() {
+    document.getElementById('utc-time').textContent = new Date().toUTCString();
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
