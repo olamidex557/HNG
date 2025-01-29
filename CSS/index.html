@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Front-End Developer Journey - HNG Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">My Front-End Developer Journey with HNG</div>
+    <div class="container">
+        <h1>Why I Want to Be a Front-End Developer and How HNG Will Help Me Achieve My Goals</h1>
+        
+        <div class="fade-in-section">
+            <h2>My Motivation for Becoming a Front-End Developer</h2>
+            <p>I have always been fascinated by how websites function and interact with users. This passion led me to explore front-end development, where I discovered the power of JavaScript, React.js, and Vue.js in creating seamless user experiences.</p>
+        </div>
+        
+        <div class="fade-in-section">
+            <h2>How HNG Will Help Me Grow in the Field</h2>
+            <p>HNG provides a hands-on approach to training, connecting interns with real-world projects and experienced mentors. Through the program, I aim to:</p>
+            <ul>
+                <li>Improve my proficiency in JavaScript and front-end frameworks.</li>
+                <li>Work on practical projects that enhance my skills.</li>
+                <li>Collaborate with professionals and other developers.</li>
+                <li>Learn UI/UX best practices and responsive design.</li>
+            </ul>
+        </div>
+        
+        <div class="fade-in-section">
+            <h2>My Goals for the Internship</h2>
+            <p>To maximize my experience at HNG, I have set the following goals:</p>
+            <ul>
+                <li>Master modern front-end technologies like React.js and Vue.js.</li>
+                <li>Enhance problem-solving skills through debugging and optimization.</li>
+                <li>Contribute to open-source projects to gain hands-on experience.</li>
+                <li>Expand my professional network through mentorship and collaboration.</li>
+            </ul>
+        </div>
+        
+        <div class="fade-in-section">
+            <h2>Conclusion</h2>
+            <p>Joining HNG is an exciting opportunity to develop my skills and prepare for a successful career in front-end development.</p>
+        </div>
+        <div class="links fade-in-section">
+            <p>For companies looking for top-tier front-end developers, consider hiring professionals:</p>
+            <ul>
+                <a href="https://hng.tech/hire/reactjs-developers" target="_blank"><strong>Hire React.js Developers</strong></a>
+                <a href="https://hng.tech/hire/vuejs-developers" target="_blank"><strong>Hire Vue.js Developers</strong></a>
+            </ul>
+        </div>
+        <a class="cta-button fade-in-section" href="https://hng.tech" target="_blank">Learn More About HNG</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll(".fade-in-section");
+            
+            const revealSection = () => {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        section.classList.add("visible");
+                    }
+                });
+            };
+            
+            window.addEventListener("scroll", revealSection);
+            revealSection();
+        });
+    </script>
+</body>
+</html>
